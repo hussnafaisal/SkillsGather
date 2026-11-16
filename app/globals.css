@@ -313,7 +313,7 @@ fieldset {
 .btn--primary {
   color: #fff;
   background: linear-gradient(135deg, var(--blue-500), var(--blue-700));
-  box-shadow: 0 12px 30px -10px rgba(43, 160, 224, 0.75), inset 0 -1px 0px rgba(255, 255, 255, 0.329);
+  box-shadow: 0 12px 30px -10px rgba(43, 160, 224, 0.75), inset 0 -1px 0px rgb(255, 255, 255);
 }
 .btn--primary::after {
   content: '';
@@ -470,10 +470,10 @@ fieldset {
 
   /* Aapke Blue-Tinted Glass Shadows */
   box-shadow: 
-    0 24px 60px rgba(8, 28, 102, 0.25),
-    inset 0 -1px 30px rgba(113, 163, 255, 0.45),
-    inset 0px -2px 7px rgba(255, 255, 255, 0.384),
-    inset 0 10px 30px rgba(2, 10, 30, 0.35);
+    0 24px 60px rgba(0, 32, 102, 0.575),
+    inset 0 -1px 30px rgba(0, 16, 79, 0.45),
+    inset 0px -2px 7px rgba(255, 255, 255, 0.622),
+    inset 0 10px 30px rgba(0, 27, 125, 0.27);
 
   animation: navIn 0.8s var(--ease) both;
   transition: top 0.35s var(--ease), box-shadow 0.35s, background 0.35s;

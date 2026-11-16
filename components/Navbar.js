@@ -84,7 +84,7 @@ export default function Navbar() {
       <header className={`nav ${scrolled ? 'is-scrolled' : ''} ${menuOpen ? 'is-open' : ''}`}>
         <div className="nav__bar">
           <Link href="/" className="nav__logo" aria-label="SkillsGather home">
-            <Logo size={40} priority />
+            <Logo size={40} priority className='Logo'/>
           </Link>
 
           <nav className="nav__links" aria-label="Primary">

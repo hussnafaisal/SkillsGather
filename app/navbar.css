@@ -504,7 +504,8 @@
 }
 :root[data-theme='light'] .nav__itemicon,
 :root[data-theme='light'] .mnav__icon {
-  color: var(--blue-700);
+  color: #fff;
+  background: linear-gradient(135deg, rgba(22, 141, 204, 0.92), rgba(31, 92, 163, 0.96));
 }
 
 /* ---- Keyboard focus ---- */

@@ -95,4 +95,4 @@ Custom page with links back to Home, Join the Pilot and Contact.
 
 ## Spacing rule
 
-Every section has at most 80px above and 90px below (`--sec-top` and `--sec-bottom` in `app/globals.css`). These shrink on phones.
+Every section has at least 40px above and below, up to 80px above and 90px below (`--sec-top` and `--sec-bottom` in `app/globals.css`). These shrink on phones. Site content uses responsive side gutters that reach about 70px on desktop.

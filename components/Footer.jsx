@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Logo from './Logo';
-import { FOOTER_LINKS } from '@/lib/content';
+import { FOOTER_LINKS, LEGAL_LINKS } from '@/lib/content';
 import { COPY } from '@/lib/config';
 
 export default function Footer() {
@@ -34,8 +34,20 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="container footer__bottom">
-        <p>&copy; {new Date().getFullYear()} SkillsGather. Faisalabad pilot.</p>
+
+      <div className="container">
+        <div className="footer__bottom">
+          <p>&copy; {new Date().getFullYear()} SkillsGather. Faisalabad pilot.</p>
+          <nav aria-label="Legal">
+            <ul className="footer__legal">
+              {LEGAL_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href}>{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
   );

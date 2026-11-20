@@ -3,13 +3,16 @@
 Shared on every page: **Navbar** (glass), **Footer**, animated background, scroll progress bar, Back-to-top button.
 
 **Navbar**
-- Desktop: Logo, Home, Get Involved dropdown (Swap a Skill, Volunteer Your Skills, Find Help), How It Works, Join the Pilot button.
-- Mobile: menu button opens a full-screen glass menu listing Home, Swap, Volunteer, Find Help, How It Works and Join the Pilot.
+- Desktop (1100px and up): Logo, Home, Get Involved dropdown (Swap a Skill, Volunteer Your Skills, Find Help), How It Works, About, Contact, Join the Pilot button and theme toggle.
+- Mobile: menu button opens a glass sidebar with Home, a Get Involved dropdown, How It Works, About, Contact, the theme toggle and Join the Pilot. The sidebar closes by itself when a page is chosen.
+- One glass style everywhere (blur plus tint). It sticks to the top on scroll with stronger blur and the same colour.
+- Theme: dark by default, light on request. The choice is saved in the browser (`sg-theme`).
 
 **Footer**
 - Brand and short note about how pilot submissions are used
-- Links to all six pages
+- Links to all pages, including About and Contact
 - Join the Pilot button
+- Bottom bar with Terms of Service, Privacy Policy and Cookie Policy
 
 ---
 
@@ -71,3 +74,25 @@ Shared on every page: **Navbar** (glass), **Footer**, animated background, scrol
 - `app/not-found.js`: 404 page
 - `app/error.js` and `app/global-error.js`: error screens
 - `app/loading.js`: loading skeleton
+
+---
+
+## 7. About Us `/about`  (`app/about/page.jsx`)
+
+Hero, what the pilot is testing (three principles), who it is for, how the pilot runs, closing call to action.
+
+## 8. Contact `/contact`  (`app/contact/page.jsx`, `components/ContactForm.jsx`)
+
+Email, location and FAQ cards plus a contact form that opens the visitor's email app. Set `NEXT_PUBLIC_CONTACT_EMAIL` in `.env.local` to turn the form on.
+
+## 9. Legal pages `/terms`, `/privacy`, `/cookies`
+
+Text lives in `lib/legal.jsx` and is rendered by `components/LegalPage.jsx`. Please review the wording before launch.
+
+## 10. 404 page  (`app/not-found.jsx`)
+
+Custom page with links back to Home, Join the Pilot and Contact.
+
+## Spacing rule
+
+Every section has at most 80px above and 90px below (`--sec-top` and `--sec-bottom` in `app/globals.css`). These shrink on phones.

@@ -164,6 +164,41 @@ export const ExternalIcon = (p) => (
   </Svg>
 );
 
+export const SunIcon = (p) => (
+  <Svg {...p}>
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+  </Svg>
+);
+
+export const MoonIcon = (p) => (
+  <Svg {...p}>
+    <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+  </Svg>
+);
+
+export const MailIcon = (p) => (
+  <Svg {...p}>
+    <rect x="3" y="5" width="18" height="14" rx="2" />
+    <path d="m3 7 9 6 9-6" />
+  </Svg>
+);
+
+export const PinIcon = (p) => (
+  <Svg {...p}>
+    <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z" />
+    <circle cx="12" cy="10" r="3" />
+  </Svg>
+);
+
+export const TargetIcon = (p) => (
+  <Svg {...p}>
+    <circle cx="12" cy="12" r="9" />
+    <circle cx="12" cy="12" r="5" />
+    <circle cx="12" cy="12" r="1" />
+  </Svg>
+);
+
 export const ICONS = {
   swap: SwapIcon,
   heart: HeartIcon,
@@ -175,6 +210,9 @@ export const ICONS = {
   eye: EyeIcon,
   users: UsersIcon,
   shield: ShieldIcon,
+  mail: MailIcon,
+  pin: PinIcon,
+  target: TargetIcon,
 };
 
 /** Render an icon by name, e.g. <NamedIcon name="swap" /> */

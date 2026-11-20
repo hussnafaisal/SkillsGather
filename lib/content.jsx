@@ -3,6 +3,8 @@
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/how-it-works', label: 'How It Works' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export const GET_INVOLVED = [
@@ -17,7 +19,40 @@ export const FOOTER_LINKS = [
   { href: '/volunteer', label: 'Volunteer Your Skills' },
   { href: '/find-help', label: 'Find Help' },
   { href: '/how-it-works', label: 'How It Works' },
+  { href: '/about', label: 'About Us' },
+  { href: '/contact', label: 'Contact' },
   { href: '/join', label: 'Join the Pilot' },
+];
+
+export const LEGAL_LINKS = [
+  { href: '/terms', label: 'Terms of Service' },
+  { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/cookies', label: 'Cookie Policy' },
+];
+
+export const ABOUT_PRINCIPLES = [
+  {
+    icon: 'target',
+    title: 'Clear scope',
+    text: 'Every swap or session starts with a defined task, so both people know what to expect before anything begins.',
+  },
+  {
+    icon: 'clock',
+    title: 'Respect for time',
+    text: 'Small tasks, like a 20-minute portfolio review or a short reel edit, keep commitments realistic for everyone.',
+  },
+  {
+    icon: 'shield',
+    title: 'Privacy first',
+    text: 'We use your answers to arrange suitable matches and keep your contact information private.',
+  },
+];
+
+export const CONTACT_TOPICS = [
+  'General question',
+  'Swap, volunteer or find help',
+  'Partnership or collaboration',
+  'Feedback about the website',
 ];
 
 export const PARTICIPATION = [

@@ -16,6 +16,9 @@ export default function NotFound() {
           <Button href="/join" variant="ghost">
             Join the Pilot
           </Button>
+          <Button href="/contact" variant="ghost" arrow={false}>
+            Contact Us
+          </Button>
         </div>
       </div>
     </section>

@@ -37,3 +37,9 @@ export const COPY = {
   privacy:
     'We use your answers to understand interest in the pilot and arrange suitable matches. Follow-up is optional and we keep your contact information private.',
 };
+
+// Contact details. Set NEXT_PUBLIC_CONTACT_EMAIL in .env.local to enable the contact form.
+export const CONTACT = {
+  email: (process.env.NEXT_PUBLIC_CONTACT_EMAIL || '').trim(),
+  location: 'Faisalabad, Punjab, Pakistan',
+};

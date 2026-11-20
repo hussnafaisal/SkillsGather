@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import ScrollProgress from '@/components/ScrollProgress';
 import { SITE } from '@/lib/config';
+import { THEME_INIT_SCRIPT } from '@/hooks/useTheme';
 
 const display = Sora({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 const body = Inter({ subsets: ['latin'], variable: '--font-body', display: 'swap' });
@@ -29,12 +30,16 @@ export const metadata = {
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
+  minimumScale: 1,
   themeColor: '#050d1f',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" data-theme="dark" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body>
         <noscript>
           <style>{'.reveal{opacity:1!important;transform:none!important}.hero__in{opacity:1!important;animation:none!important}'}</style>

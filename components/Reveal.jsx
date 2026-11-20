@@ -20,7 +20,7 @@ export default function Reveal({
     <Tag
       ref={ref}
       className={`reveal reveal--${direction} ${inView ? 'is-in' : ''} ${className}`.trim()}
-      style={{ '--d': `${delay}ms` }}
+      style={{ '--d': `${Math.round(delay * 0.5)}ms` }}
       {...rest}
     >
       {children}
